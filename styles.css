@@ -1,0 +1,48 @@
+body{
+margin: 0;
+
+background: url("NG-en-20221114-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+font-weight: bold;
+}
+.second-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin: 40px 3em 0 3em;
+}
+.netflix-logo-width{
+    width: 15%;
+    object-fit: cover;
+    order: -1;
+    color: #e50914;
+}
+.sign-in-btn{
+    text-decoration: none;
+    background: #e50914;
+    color: white;
+    padding: .5em 1.5em;
+    text-align: center;
+    text-justify:inter-cluster;
+    border-radius: 4px;
+    order: 1;
+}
+.concord-img{
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8))
+    
+}
+.concord-img{
+    background: rgba(0,0,0,.4);
+}
+
+.text{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.flex-two{
+    display: flex;
+    
+    justify-content: center;
+}
