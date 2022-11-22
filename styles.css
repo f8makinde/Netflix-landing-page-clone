@@ -1,166 +1,133 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-margin: 0;
-font-weight: bold;
-background: black;
-font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-color: white;
-}
-.main-page{
-    background: url("NG-en-20221114-popsignuptwoweeks-perspective_alpha_website_small.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin: 0;
-    /* padding: 4em 0; */
-}
-.second-container{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 3em 0 3em;
-   
-}
-.netflix-logo-width{
-    width: 10%;
-    object-fit: cover;
-    order: -1;
-    color: #e50914;
-}
-.sign-in-btn{
-    text-decoration: none;
-    background: #e50914;
-    color: white;
-    padding: .5em 1.5em;
-    text-align: center;
-    text-justify:inter-cluster;
-    border-radius: 4px;
-    order: 1;
-}
-hr{
-    background-color: rgb(51, 54, 77);
-    color: black;
-    margin: 0;
-    padding: .2em ;
-    border: none;
-}
-
-.text{
-    text-align: center;
-    color: white;
-    margin-top: 50px;
-}
-.flex-two{
-    display: flex;
-    justify-content: center;
-}
-.get-started-btn{
-  background: #e50914;
-  border: none;  
-  color: white;
-  padding: 0em 5em;
-
-}
-#email-input{
-    padding: 1.5em 8em;
-}
-.step-two{
+    font-weight: bold;
     background: black;
-    display: flex;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     color: white;
-   justify-content: center;
-   margin: 0;
-   border-bottom: 8px solid #222;
-}
-.step-two-text{
-   margin: 6em 4em 0 4em;
-   margin-top: 6em;
+    }
 
-}
-.tv-image{
-    width: 70%;
-   
-}
-.container{
-    border-bottom: 8px solid #222;
-}
+    ul{
+        list-style: none;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    p{
+        margin: 0.5rem 0;
+        font-weight: 0;
+        color: white;
+    }
+    img{
+        width: 100%;
+       
+    }
+    .netflix-logo-width{
+        width: 15%;
+    }
+    .showcase{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url("NG-en-20221114-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .showcase::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    }
+    .showcase-top{
+        position: relative;
+        z-index: 2;
+        height: 90px;
+    }
+    .showcase-img{
+        position: relative;
+        width: 140px;
+        top: 50%;
+        left: 0;
+        transform: translate(40%, -50%);
+    }
+    .showcase-top a{
+       position: absolute;
+       top: 50%;
+       right: 0;
+       transform: translate(-60%, -50%);
+    }
 
-.flex-animate{
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 1 auto;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-}
+    .showcase-content{
+        position: relative;
+        margin: 0.26%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 9rem;
+    }
+    .showcase-content h1{
+        font-weight: 700;
+        font-size: 64px;
+        margin: 0 30px;
+        max-width: 800px;
+        line-height: 74.5px;
+    }
+    .showcase-content h1{
+        font-size: 25px;
+        margin: 16px 0px;
+    }
+    .showcase-content p{
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
 
-video{
-    position: absolute;
-    width: 30%;
-}
-.step-three{
-    background: black;
-    display: flex;
-    color: white;
-   justify-content: center;
-   margin: 0;
-   border-bottom: 8px solid #222;
-    /* margin-bottom: 4em; */
-}
-.step-three-text{
-    margin-top: 6em;
-    order: 1;
-    
-}
-.mobile-image{
-    order: -1;
-   
-}
-.border{
-    border: 3px solid #222;
-    /* padding: 2em 12em;  */
-    background: none;
-    border-radius: 10px;
-    display: flex;
-    margin: -0em auto 0em auto; 
-}
-.step-four{
-    border-top: 8px solid #222;
-    display: flex;
-    justify-content: center;
-    margin: 8em 0;
-    border-bottom: 8px solid #222;
-}
-.step-five{
-    display: flex;
-    justify-content: center;
-    margin: 0 4em;
-    /* border-bottom: 8px solid #222; */
-}
-.step-six{
-    border-bottom: 8px solid #222;
-    border-top: 8px solid #222;
-    display: flex;
-}
-.faq{
-
- margin: 0 auto;
-
-}
-.faq-text{
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    color: #737373;
-}
-li{
-    list-style-type: none;
-    line-height: 2rem;
-}
-
-footer{
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 6em 1em;
-}
+    }
+    .showcase-content input{
+        position: absolute;
+        left: 0;
+        bottom: -8vh;
+        width: 454px;
+        height: 3rem;
+        font-size: 1rem;
+        padding-left: .5rem;
+    }
+    .btn{
+        display: inline-block;
+        background: #e50914;
+        color: white;
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+        margin-right: 0.5rem;
+        box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+    }
+    .btn-rounded{
+        border-radius: 5px;
+    }
+    .showcase-content .btn-lg{
+        position: absolute;
+        right: 0;
+        bottom: -8vh;
+        padding: 0.5rem 1.2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        height: 36px;
+    }
