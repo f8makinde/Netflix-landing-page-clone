@@ -37,6 +37,7 @@ body{
         background: url("NG-en-20221114-popsignuptwoweeks-perspective_alpha_website_small.jpg");
         background-size:cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
     .showcase::after{
         content: "";
@@ -44,28 +45,28 @@ body{
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
         background: rgba(0, 0, 0, 0.4);
-        box-shadow: 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+        box-shadow: 120px 100px 250px #000000 , inset -120px -100px 250px #000000;
     }
     .showcase-top{
         position: relative;
         z-index: 2;
         height: 90px;
     }
-    .showcase-img{
-        position: relative;
+    .showcase-top img{
         width: 140px;
-        top: 50%;
-        left: 0;
-        transform: translate(40%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
     }
     .showcase-top a{
-       position: absolute;
-       top: 50%;
-       right: 0;
-       transform: translate(-60%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60% , -50%);
     }
 
     .showcase-content{
@@ -77,9 +78,9 @@ body{
         justify-content: center;
         text-align: center;
         align-items: center;
-        margin-top: 9rem;
+        margin-top: 8rem;
     }
-   
+  
     .showcase-content h1{
         font-weight: 700;
         font-size: 64px;
@@ -89,7 +90,7 @@ body{
     }
     .showcase-content h3{
         font-size: 25px;
-        margin: 16px 0px;
+        margin: 16px 0;
     }
     .showcase-content p{
         font-size: 19px;
@@ -99,7 +100,7 @@ body{
 
     }
     .showcase-content input{
-        position: absolute;
+        /* position: absolute; */
         left: 0;
         bottom: -8vh;
         width: 454px;
@@ -118,14 +119,18 @@ body{
         cursor: pointer;
         border-radius: 2px;
         margin-right: 0.5rem;
+        outline: none;
         box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
     }
-  
+    .mail{
+        display: flex;
+        margin-bottom: 8em;
+    }
     .btn-rounded{
         border-radius: 5px;
     }
     .showcase-content .btn-lg{
-        position: absolute;
+        /* position: absolute; */
         right: 0;
         bottom: -8vh;
         padding: 0.5rem 1.2rem;
@@ -133,4 +138,150 @@ body{
         text-transform: uppercase;
         height: 36px;
         width: 14rem;
+      
+    }
+    .card-0, .card-1, .card-2, .card-3{
+       border-top: 8px rgba(69, 69, 69) solid;
+       padding: 50px;
+    }
+    .card-0{
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+    .desc-0{
+        padding-left: 100px;
+    }
+    .card-1{
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 40%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+    .desc-1{
+        padding-left: 80px;
+    }
+    .style-cards h1{
+        font-size: 3rem;
+        padding: 1rem;
+        padding-left: 0;
+    }
+    .style-cards h3{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .card-1 video{
+        position: relative;
+        width: 100%;
+        height: 54%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        z-index: -1;
+    }
+    .card-1 img{
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+    .card-2{
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+    .desc-2{
+        padding-left: 100px;
+    }
+    .card-3{
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 40%;
+        text-align: left;
+        align-items: center;
+        padding: 25px 45px 50px;
+    }
+    .desc-3{
+        padding-left: 80px;
+        padding-right: 20px;
+    }
+
+    .faq{
+        text-align: center;
+        border-top: 8px rgba(69, 69, 69) solid;
+        border-bottom: 8px rgba(69, 69, 69) solid;
+    }
+    .faq h1{
+        padding-bottom: 40px;
+        font-size: 3rem;
+        margin-top: 1em;
+    }
+    .questions{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+        align-items: center;
+    }
+    .questions li{
+        padding: 20px 30px;
+        margin: 5px;
+        font-size: 1.6rem;
+        background-color: #303030;
+        color: white;
+        text-align: left;
+        width: 50%;
+    }
+    .faq p{
+        padding-top: 60px;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+    .input{
+        display: flex;  
+        justify-content: center;
+        margin-bottom: 4.5em;
+    }
+    .input input{
+        width: 600px;
+        height: 3rem;
+   
+    }
+    .input button{
+        height: 3.25rem;
+        width: 320px;
+        left: 20px;
+        text-align: center;
+        background: #e50914;
+        font-size: 1.5rem;
+        padding: 15px 32px;
+        border: none;
+        border-radius: 2px;
+        color: white;
+    }
+    .footer{
+        max-width: 70%;
+        margin: 1rem auto;
+        overflow: auto;
+
+    }
+    .footer, .footer a{
+        color: #999999;
+        font-size: 0.9rem;
+    }
+    .footer p{
+        margin-bottom: 1.5rem;
+    }
+    .footer .footer-cols{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+    }
+    .footer li{
+        line-height: 2;
     }
